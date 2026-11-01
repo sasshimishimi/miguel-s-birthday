@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HAPPY BIRTHDAY!</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- START SCREEN -->
+    <section id="start-screen" class="screen">
+
+        <div class="title-content">
+            <p class="game-label">A SPECIAL ADVENTURE</p>
+
+            <h1>HAPPY BIRTHDAY!</h1>
+
+            <p class="game-subtitle">
+                MIGI ❤︎⁠
+            </p>
+
+            <div class="start-character">
+                <img
+                    src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-vi/x-y/656.png"
+                    alt="Froakie">
+            </div>
+
+            <button id="start-button" class="game-button">
+                START GAME
+            </button>
+
+            <p class="press-start">PRESS TO BEGIN ♡</p>
+        </div>
+
+    </section>
+
+
+    <!-- MAIN GAME SCREEN -->
+    <section id="game-screen" class="screen hidden">
+
+        <div class="game-header">
+            <span>ROUTE 01</span>
+            <span>A SPECIAL DELIVERY ♡</span>
+        </div>
+
+        <div class="game-world">
+
+            <div class="location-label">
+                A quiet little place...
+            </div>
+
+            <!-- FROAKIE -->
+            <div id="froakie" class="character">
+
+                <img
+                    src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-vi/x-y/656.png"
+                    alt="Froakie">
+
+            </div>
+
+
+            <!-- TREASURE BOX -->
+            <div id="treasure-box" class="treasure-box">
+
+                <div class="chest-lid"></div>
+
+                <div class="chest-body">
+                    <span>♡</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- DIALOGUE BOX -->
+        <div class="dialogue-container">
+
+            <div class="dialogue-name" id="dialogue-name">
+                FROAKIE
+            </div>
+
+            <div class="dialogue-box">
+
+                <p id="dialogue-text">
+                    Froakie is ready for a little adventure!
+                </p>
+
+                <button id="next-button" class="next-button">
+                    NEXT ▶
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- LETTER SCREEN -->
+    <section id="letter-screen" class="screen hidden">
+
+        <div class="letter-container">
+
+            <p class="letter-label">A MESSAGE FOR YOU</p>
+
+            <h2>migi, ♡</h2>
+
+            <div id="letter-text" class="letter-text">
+                <!-- Letter will appear here -->
+            </div>
+
+            <button id="evolve-button" class="game-button">
+                CONTINUE ▶
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- EVOLUTION SCREEN -->
+    <section id="evolution-screen" class="screen hidden">
+
+        <div class="evolution-content">
+
+            <p id="evolution-message">
+                WHAT? FROAKIE IS EVOLVING!
+            </p>
+
+            <!-- EVOLUTION CHARACTER -->
+            <div class="evolution-sprite">
+
+                <img
+                    id="evolution-character"
+                    src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-vi/x-y/656.png"
+                    alt="Evolving Pokemon">
+
+            </div>
+
+            <!-- EVOLUTION RESULT -->
+            <h2 id="evolution-title">
+                ...
+            </h2>
+
+            <!-- GOOGLE DRIVE SURPRISE LINK -->
+            <a
+                id="surprise-link"
+                class="surprise-link hidden"
+                href="https://drive.google.com/drive/folders/16vCClV3RuHKehyj1YBicKjxgksUzZX1K?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                ♡ CLICK HERE TO OPEN YOUR SURPRISE ♡
+
+            </a>
+
+            <!-- BIRTHDAY EFFECTS -->
+            <div id="effects"></div>
+
+            <!-- BIRTHDAY POPUP -->
+            <div id="birthday-popup" class="birthday-popup hidden">
+
+                <div class="blue-flowers">
+                    ❀ ✿ ❀
+                </div>
+
+                <h2 id="birthday-message" class="hidden">
+                    HAPPY BIRTHDAY! 💙
+                </h2>
+
+                <p>
+                    Wishing you a day as wonderful as you are.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
